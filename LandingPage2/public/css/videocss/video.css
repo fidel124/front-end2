@@ -1,0 +1,158 @@
+.vidnavbar{
+    margin-bottom:5px;
+    /*border-bottom:1px solid rgba(255,255,255,0.3); */
+    background-color:#505050; /*transparent*/
+    color:white;    
+    font-size:18px;
+    -webkit-transition:background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition:background .5s ease-in-out, padding .5s ease-in-out;
+    transition:background .5s ease-in-out, padding .5s ease-in-out;
+}
+
+.vidnav-btn{
+    position:relative;
+    width:40px; 
+    margin:5px; 
+    border:#000000 1px solid;
+    border-radius: 2px;
+    padding:5px 10px;
+    cursor: pointer;
+    background-color:#808080;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+.vidnav-btn:hover{
+    border:yellow 1px solid;
+}
+.vidnav-btn > div{                 /*#nav-btn>*/
+    width:20px;
+    height:3px; 
+    margin-bottom: 3px;
+    border:#D3D3D3 1px solid;
+    background-color:#D3D3D3;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.vidnav-btn:hover div{
+    background-color: white;
+}
+
+.menu{
+    /*margin-top:50px;*/
+    overflow-x:hidden;
+    position: relative;
+    left: 0;
+}
+.menu-open{
+    left: 231px;
+}
+.menu-open .menu-side{
+    left:0;    
+}
+
+.menu-side,
+.menu{
+    -webkit-transition: left 0.4s ease;
+    -moz-transition: left 0.4s ease;
+    -o-transition: left 0.4s ease;
+    transition: left 0.4s ease;
+}
+.menu-side{
+    margin-top:50px;
+    /*background-color:#333;
+    border-right:1px solid #000; */
+    color:#fff;
+    position: fixed;
+    top: 0;
+    left: -230px;
+    max-width: 240px; /*210*/
+    height: 100%;
+    padding: 10px;
+}
+
+
+
+
+
+.playlist ul {
+    list-style-type: none;
+}
+
+.playlist ul a {
+    cursor: pointer;
+    color: #428bca;
+    text-decoration: none;
+}
+
+.playlist ul a:visited {
+    color: #428bca;
+}
+
+.playlist ul a:hover {
+    color: #428bca;
+    text-decoration: underline;
+}
+
+.videogular-container {
+    width: 100%;
+    height: 320px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.videogular-container .skipButton {
+    position: absolute;
+    padding: 10px;
+    top: 10px;
+    right: 10px;
+    z-index: 99999;
+    color: white;
+    cursor: pointer;
+    background-color: #666666;
+    border: 2px #FFFFFF solid;
+    display: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+}
+
+@media (min-width: 1200px) {
+    .videogular-container {
+        width: 92%;     /*1170px*/
+        height: 40%;  /*658.125px*/
+    }
+
+    .videogular-container.audio {
+        width: 1170px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .videogular-container {
+        width: 940px;
+        height: 528.75px;
+    }
+
+    .videogular-container.audio {
+        width: 940px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .videogular-container {
+        width: 728px;
+        height: 409.5px;
+    }
+
+    .videogular-container.audio {
+        width: 728px;
+        height: 50px;
+    }
+}

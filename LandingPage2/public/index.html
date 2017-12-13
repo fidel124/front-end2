@@ -1,0 +1,55 @@
+<!doctype html>
+<html ng-app="testApp">
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+	<link href="css/bootstrap.min.css" rel="stylesheet"/>  
+  <link href="css/app.css" rel="stylesheet"/>  
+	<link href="css/videocss/video.css" rel="stylesheet"/>  
+  
+ </head>
+ <body class="menu"  >
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+     <div class="container">
+       <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">By: Fidelis</a>
+       </div>
+       <div id="navbar" class="collapse navbar-collapse">
+       	<ul class="nav navbar-nav">
+           <li class="active"><a href="#/home">Home</a></li>
+           <li><a href="#/search">Search</a></li> 
+           <li><a href="#/video">Video</a></li>          
+        </ul>
+       </div>
+     </div><!--nav-container -->
+    </nav>
+
+    <div ng-view></div>
+
+		<script src="js/jquery.min.js"></script>
+  	<script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+
+    <script src="js/angular-sanitizer.min.js"></script>
+    <script src="js/videojs/videogular.min.js"></script>
+    <script src="js/videojs/videogular-controls.js"></script>
+    <script src="js/videojs/videogular-overlay-play.js"></script>
+    <script src="js/videojs/videogular-poster.js"></script>
+    <script src="js/videojs/videogular-buffering.js"></script>
+
+  	<script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+  	<script src="controllers/homecontroller.js"></script>
+    <script src="controllers/searchcontroller.js"></script>  
+    <script src="controllers/videocontroller.js"></script>
+     
+	</body>
+</html>
